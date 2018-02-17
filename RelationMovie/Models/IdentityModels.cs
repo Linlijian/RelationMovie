@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using RelationMovie.Entities;
 
 namespace RelationMovie.Models
 {
@@ -29,5 +30,6 @@ namespace RelationMovie.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Section> Sections { get; set; }
     }
 }
