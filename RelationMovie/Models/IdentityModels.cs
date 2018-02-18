@@ -36,5 +36,6 @@ namespace RelationMovie.Models
         public DbSet<Item> Items { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
+        public DbSet<ProductLinkText> ProductLinkTexts { get; set; }
     }
 }
