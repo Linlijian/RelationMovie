@@ -31,5 +31,9 @@ namespace RelationMovie.Models
             return new ApplicationDbContext();
         }
         public DbSet<Section> Sections { get; set; }
+        public DbSet<Part> Parts { get; set; }
+        public DbSet<ItemType> ItemTypes { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
