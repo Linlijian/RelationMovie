@@ -27,8 +27,8 @@ namespace RelationMovie
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/admin").Include(
-                     "~/Content/Adminmenu.js"));
+            bundles.Add(new StyleBundle("~/bundles/admin").Include(
+                     "~/Scripts/Adminmenu.js"));
         }
     }
 }
