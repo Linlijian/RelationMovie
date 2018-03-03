@@ -1,0 +1,29 @@
+﻿@model IEnumerable<RelationMovie.Entities.Part>
+@using RelationMovie.Areas.Admin.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        @Html.Partial("_tableButton",new SmallButtonModel { Id = item.Id })
+    </tr>
+}
+
+</table>
