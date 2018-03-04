@@ -47,7 +47,7 @@ namespace RelationMovie.Entities
         public int SectiosId { get; set; }
         public int ItemTypeId { get; set; }
         public int PartId { get; set; }
-        public int IsFree { get; set; }
+        public Boolean IsFree { get; set; }
 
         [DisplayName("Item Types")]
         public ICollection<ItemType> Itemtypes { get; set; }
