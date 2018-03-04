@@ -43,7 +43,7 @@ namespace RelationMovie.Entities
             }
         }
 
-        public int ProductId { get; set; }
+        public int SectiosIdProductId { get; set; }
         public int SectiosId { get; set; }
         public int ItemTypeId { get; set; }
         public int PartId { get; set; }

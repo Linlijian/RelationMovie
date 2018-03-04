@@ -40,7 +40,13 @@ namespace RelationMovie.Areas.Admin.Controllers
         // GET: Admin/Item/Create
         public ActionResult Create()
         {
-            return View();
+            var model = new Item
+            {
+                Itemtypes = db.ItemTypes.ToList(),
+                Parts = db.Parts.ToList(),
+                Sections = db.Sections.ToList()
+            };
+            return View(model);
         }
 
         // POST: Admin/Item/Create
