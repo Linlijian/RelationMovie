@@ -59,13 +59,13 @@
             @Html.DisplayFor(model => model.WaitDay)
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.ProductId)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.ProductId)
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.SectiosId)
@@ -105,8 +105,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.Partial("_BackToIndexButton")
         </div>
     }
 </div>

@@ -58,13 +58,13 @@
             @Html.DisplayFor(model => model.WaitDay)
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.ProductId)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.ProductId)
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.SectiosId)
@@ -101,6 +101,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.Partial("_EditButton", Model.Id)
+    @Html.Partial("_BackToIndexButton")
 </p>

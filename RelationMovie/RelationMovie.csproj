@@ -286,6 +286,7 @@
     <Content Include="Areas\Admin\Views\Item\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Item\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Item\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_CreateButton.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
